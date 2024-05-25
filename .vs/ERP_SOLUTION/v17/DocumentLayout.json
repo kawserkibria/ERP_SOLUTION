@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\Kawsar\\Kawser kibria\\ERP_SOLUTION\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5FC0413E-8BF4-4A7C-9092-F5595F1392C3}|ERP_SOLUTION\\ERP_SOLUTION.csproj|c:\\users\\administrator\\desktop\\kawsar\\kawser kibria\\erp_solution\\erp_solution\\shared\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5FC0413E-8BF4-4A7C-9092-F5595F1392C3}|ERP_SOLUTION\\ERP_SOLUTION.csproj|solutionrelative:erp_solution\\shared\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Kawsar\\Kawser kibria\\ERP_SOLUTION\\ERP_SOLUTION\\Shared\\MainLayout.razor",
+              "RelativeDocumentMoniker": "ERP_SOLUTION\\Shared\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Kawsar\\Kawser kibria\\ERP_SOLUTION\\ERP_SOLUTION\\Shared\\MainLayout.razor",
+              "RelativeToolTip": "ERP_SOLUTION\\Shared\\MainLayout.razor",
+              "ViewState": "AQIAAHoDAAAAAAAAAAAAAHoDAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-25T05:15:50.119Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
