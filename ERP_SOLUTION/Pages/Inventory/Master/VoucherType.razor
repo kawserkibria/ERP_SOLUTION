@@ -1,0 +1,174 @@
+﻿@page "/VoucherType"
+<style>
+    form {
+        width: 100%;
+        /*padding: 20px;*/
+    }
+
+    label {
+        padding: 0 5px;
+        text-align: right;
+        vertical-align: middle;
+    }
+
+    input {
+        /*padding: 5px;*/
+        vertical-align: middle;
+    }
+
+    .checkbox {
+        margin-bottom: 10px;
+    }
+
+    select, .children, .gender, .bdate-block {
+        width: calc(100% + 26px);
+        padding: 5px 0;
+    }
+
+    select {
+        background: transparent;
+    }
+
+    .gender input {
+        width: auto;
+    }
+
+    .gender label {
+        padding: 0 5px 0 0;
+    }
+
+    .bdate-block {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .birthdate select.day {
+        width: 35px;
+    }
+
+    .birthdate select.mounth {
+        width: calc(100% - 94px);
+    }
+
+    .birthdate input {
+        width: 38px;
+        vertical-align: unset;
+    }
+
+    .checkbox input, .children input {
+        width: auto;
+        margin: -2px 10px 0 0;
+    }
+
+
+    label {
+        width: 27%;
+    }
+
+    input {
+        width: 72%;
+    }
+
+    .sm-input {
+        width: 40%;
+    }
+</style>
+@*<link href="~/lib/coreui/css/form.css" rel="stylesheet" />*@
+
+<div class="container-fluid">
+
+
+
+    <div class="row">
+
+
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-header" style="text-align:center">
+                    <h4>Account Voucher Types</h4>
+                </div>
+
+                <form class="form-horizontal" asp-action="Create">
+
+                    <div class="card-body">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                        @*<div class="form-group">
+                        <label class="control-label">Brand</label>
+                        <input asp-for="SupplierName" class="form-control" />
+                        <span asp-validation-for="SupplierName" class="text-danger"></span>
+                        </div>*@
+
+
+                        <div>
+                            <div>
+                                <label>Type of Voucher :</label><input asp-for="VoucherName">
+                            </div>
+                            <div>
+                                <label>Voucher Name :</label><input asp-for="VoucherName">
+                            </div>
+                            <div>
+                                <label>Voucher Numbering Method :</label><input asp-for="VoucherName" class="sm-input">
+                            </div>
+                            <div>
+                                <label>Starting No :</label><input asp-for="VoucherName" class="sm-input">
+                            </div>
+                            <div>
+                                <label>Width of Numerical Part :</label><input asp-for="VoucherName" class="sm-input">
+                            </div>
+                            <div>
+                                <label>Prefix :</label><input asp-for="VoucherName" class="sm-input">
+                            </div>
+
+                            <div>
+                                <label>Suffix :</label><input asp-for="VoucherName" class="sm-input">
+                            </div>
+                            <div>
+                                <label>Voucher Lock Date :</label><input asp-for="VoucherName" class="sm-input">
+                            </div>
+                            <div>
+                                <label>Fixed Transaction Date :</label><input asp-for="VoucherName" class="sm-input">
+                            </div>
+                            <div>
+                                <label>Print After Saving Voucher :</label><input asp-for="VoucherName" class="sm-input">
+                            </div>
+
+                            <div class="checkbox" style="padding:10px">
+                                <div style="float:left">
+                                    <input type="checkbox" name="checkbox" checked><span>Check Information (RV) </span>
+                                </div>
+                                <div style="text-align:center">
+                                    <input type="checkbox" name="checkbox"><span>Total Voucher</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+
+                        <div style="float:right;padding:10px">
+                            <button class="btn btn-sm btn-primary" type="submit">
+                                <i class="fa fa-dot-circle-o"></i> Save
+                            </button>
+                            <button class="btn btn-sm btn-danger">
+                                <i class="fa fa-close"></i> Close
+                            </button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <div>
+        <a asp-action="Index">Back to List</a>
+    </div>
+
+</div>
+
+
+@code {
+
+}

@@ -17,7 +17,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyProductAttribute("ERP_SOLUTION")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5a9b00d694ee25c81a6e4f339daf8964a351d14f")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ERP_SOLUTION.Views")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
