@@ -1,0 +1,124 @@
+﻿@page "/MeasurementUnit"
+<style>
+
+
+    label {
+        padding: 0 5px;
+        text-align: right;
+        vertical-align: middle;
+    }
+
+
+
+    .lbl {
+        width: 27%;
+    }
+
+    input {
+        width: 72%;
+    }
+
+</style>
+<div class="container-fluid">
+
+
+
+    <div class="row">
+
+
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-header" style="text-align:center">
+                    <h4>Measurement Unit</h4>
+                </div>
+
+                <form class="form-horizontal" asp-action="Create">
+
+                    <div class="card-body">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                        @*<div class="form-group">
+                        <label class="control-label">Brand</label>
+                        <input asp-for="SupplierName" class="form-control" />
+                        <span asp-validation-for="SupplierName" class="text-danger"></span>
+                        </div>*@
+
+
+                        <div>
+                            <div>
+                                <label class="lbl">Symbol :</label><input asp-for="SupplierName">
+                            </div>
+                            <div>
+                                <label class="lbl">Formal Name :</label><input asp-for="SupplierName">
+                            </div>
+                            <div>
+                                <label class="lbl">No of Decimal Palces :</label><input asp-for="SupplierName">
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div style="float:left;padding:10px">
+                            <button class="btn btn-sm btn-primary" type="submit">
+                                <i class="fa fa-plug"></i> New
+                            </button>
+
+                        </div>
+                        <div style="float:right;padding:10px">
+                            <button class="btn btn-sm btn-primary" type="submit">
+                                <i class="fa fa-dot-circle-o"></i> Save
+                            </button>
+                            <button class="btn btn-sm btn-danger">
+                                <i class="fa fa-close"></i> Close
+                            </button>
+                        </div>
+
+                    </div>
+                </form>
+
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-header">
+                    <i class="fa fa-align-justify"></i> Measurement Unit List
+                </div>
+                <div class="card-body">
+                    <table class="table" id="demoGrid">
+                        <thead>
+                            <tr>
+                                <th>Symbol</th>
+                                <th>Formal Name</th>
+                                <th></th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Box</td>
+                                <td></td>
+                                <td>
+                                    <button class="btn btn-success btn-sm rounded-0" type="button" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fa fa-edit"></i></button>
+                                    <button class="btn btn-danger btn-sm rounded-0" type="button" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-trash"></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+</div>
+
+
+
+
+@code {
+
+}

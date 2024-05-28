@@ -1,0 +1,137 @@
+﻿
+@page "/BatchConfiguration"
+<div class="container-fluid">
+
+
+
+    <div class="row">
+
+
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-header" style="text-align:center">
+                    <h4>Batch Configuration</h4>
+                </div>
+
+                <form class="form-horizontal" asp-action="Create">
+
+                    <div class="card-body">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                        @*<div class="form-group">
+                        <label class="control-label">Brand</label>
+                        <input asp-for="SupplierName" class="form-control" />
+                        <span asp-validation-for="SupplierName" class="text-danger"></span>
+                        </div>*@
+
+
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="inputCity">Batch No. :</label>
+                                <input asp-for="SupplierName" class="form-control" />
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputCity"></label>
+                                <input asp-for="SupplierName" class="form-control" style="margin-top:9px" />
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputZip">Batch Size :</label>
+                                <input type="text" class="form-control" id="inputZip">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="inputCity">Manufacture Date :</label>
+                                <input asp-for="SupplierName" class="form-control" />
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputCity">Expire Date</label>
+                                <input asp-for="SupplierName" class="form-control" />
+                            </div>
+
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="inputCity">Start Date :</label>
+                                <input asp-for="SupplierName" class="form-control" />
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputCity">End Date</label>
+                                <input asp-for="SupplierName" class="form-control" />
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputZip">Batch Size :</label>
+                                <input type="text" class="form-control" id="inputZip">
+                            </div>
+                        </div>
+
+
+                        @*<div>
+                        <div>
+                        <label>Name :</label><input asp-for="SupplierName" style="width:100%">
+                        </div>
+
+
+                        </div>*@
+                    </div>
+                    <div class="card-footer">
+
+                        <div style="float:right;padding:10px">
+                            <button class="btn btn-sm btn-primary" type="submit">
+                                <i class="fa fa-dot-circle-o"></i> Save
+                            </button>
+                            <button class="btn btn-sm btn-danger">
+                                <i class="fa fa-close"></i> Close
+                            </button>
+                        </div>
+
+                    </div>
+                </form>
+
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-header">
+                    <i class="fa fa-align-justify"></i> Location List
+                </div>
+                <div class="card-body">
+                    <table class="table" id="demoGrid">
+                        <thead>
+                            <tr>
+                                <th>Location Name</th>
+                                <th>Branch Name</th>
+                                <th>Status</th>
+                                <th></th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Accounts(Factory)</td>
+                                <td>Deeplaid....</td>
+                                <td>Active</td>
+                                <td>
+                                    <button class="btn btn-success btn-sm rounded-0" type="button" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fa fa-edit"></i></button>
+                                    <button class="btn btn-danger btn-sm rounded-0" type="button" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-trash"></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+</div>
+
+
+
+
+@code {
+
+}
